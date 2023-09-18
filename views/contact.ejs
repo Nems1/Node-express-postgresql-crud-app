@@ -1,0 +1,49 @@
+<%- include("partials/_head") %>
+
+<%- include("partials/_header") %>
+
+<main class = 'container'>
+  <section class = 'main-items main-items-sm main-items-md'>
+    <h1>Let us connect </h1>
+    <!--<h3> together we can make great things</h3> -->
+  </section>
+  <section class = 'main-items main-items-sm main-items-md'>
+    <form class = 'contact-form' name = 'contactForm' action = '/contact' method = 'post'>
+      <section class = 'form-item'>
+          <label for = 'firstName'>First Name
+          </label>
+          <input type = "text" name = "firstName" 
+                 id = "firstName" 
+                 class = "firstName input-item"
+                 value = "<%= User.firstname %>"
+                 disabled>
+      </section>
+      <section class = 'form-item'>
+          <label for = 'lastName'>Last Name
+          </label>
+          <input type = 'text' name = 'lastName' 
+                 value = '<%= User.lastname %>' 
+                 id = "lastName" class = 'lastName input-item' disabled>
+     </section>
+     <section class = 'form-item'>
+          <label for = 'emal'>Email</label>
+          <input type = 'email' name = 'email' 
+                id = 'email' class = 'input-item'
+                value = '<%= User.email %>' 
+                disabled>
+  </section>
+     <section class = 'form-item'>
+          <label for = 'comment'>Message
+          </label>
+          <textarea id = "comment" class = 'comment' 
+                  name = 'comment'
+                  placeholder = 'Leave us a comment'
+                  class = 'input-item' spellcheck = "true"></textarea>
+     </section>
+     <section >
+      <button type = "submit" class = 'btn'>Submit</button>
+     </section>
+  </form>
+  </section>
+</main>
+<%- include("partials/_footer") %>

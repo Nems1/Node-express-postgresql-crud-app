@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('partials/_head') %>
+<body>
+    <header class = 'header'>
+        <%- include("partials/_header") %>
+    </header>
+    <main class = 'container'>
+        <header>
+           <h3> Customers Information</h3>
+        </header> 
+            <section class = "main-items ">
+            <section class = "main-avatar">
+                <img src = "images/nems-07.jpg">
+            </section> 
+            <% if(customers.length) { %>
+            <section class = "table-wrapper">
+                <table class = "table">
+                    <!--<caption>Personal Information</caption> --> 
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Email</th>
+                            <!--<th>Reg. Date</th> -->
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% customers.map(customer => { %>  
+                        <tr>
+                           <td><%= customer.customer_id %></td>
+                            <td><%= customer.first_name %></td>
+                            <td><%= customer.last_name %></td>
+                            <td><%= customer.email %></td>
+                            <!--<td><%# new Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'short', day: '2-digit'}).format(customer.create_date) %></td>-->
+                        </tr>
+                        <% }) %> 
+                        </tbody>
+                        <tfoot >
+                            <tr >
+                                <td colspan = "4">Number of customers (<%= customers.length %>). Analyzed by Nemwel Onsando</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    <% } else { %>
+                        <h3> We could not find any Customer Data!</h3>
+                    <% } %>
+                </section>
+            </section>
+        </main>
+        <footer class = 'footer'>
+            <%- include("partials/_footer") %>
+        </footer>
+        <script src = "js/index.js"></script>
+    </body>
+</html>

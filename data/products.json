@@ -1,0 +1,149 @@
+{
+    "items": [
+        {
+            "sys": {
+                "id": "1"
+            },
+            "fields": {
+                "title": "Semi Turkey Ladies Dress",
+                "price": 2800,
+                "image": {
+                    "fields": {
+                        "file": {
+                            "url": "images/dress-06.jpg"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "sys": {
+                "id": "2"
+            },
+            "fields": {
+                "title": "Turkey Ladies Dress",
+                "price": 3500,
+                "image": {
+                    "fields": {
+                        "file": {
+                            "url": "images/dress-04.jpg"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "sys": {
+                "id": "3"
+            },
+            "fields": {
+                "title": "Turkey Girl Dress",
+                "price": 3500,
+                "image": {
+                    "fields": {
+                        "file": {
+                            "url": "images/girl-01.jpg"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "sys": {
+                "id": "4"
+            },
+            "fields": {
+                "title": "Ladies Classy Handbag",
+                "price": 2500,
+                "image": {
+                    "fields": {
+                        "file": {
+                            "url": "images/bag-01.jpg"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "sys": {
+                "id": "5"
+            },
+            "fields": {
+                "title": "Semi Turkey Ladies Suit",
+                "price": 3500,
+                "image": {
+                    "fields": {
+                        "file": {
+                            "url": "images/dress-03.jpg"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "sys": {
+                "id": "6"
+            },
+            "fields": {
+                "title": "Classy Ladies Handbag",
+                "price": 2500,
+                "image": {
+                    "fields": {
+                        "file": {
+                            "url": "images/bag-02.jpg"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "sys": {
+                "id": "7"
+            },
+            "fields": {
+                "title": "Turkey Ladies Dress",
+                "price": 2800,
+                "image": {
+                    "fields": {
+                        "file": {
+                            "url": "images/dress-09.jpg"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "sys": {
+                "id": "8"
+            },
+            "fields": {
+                "title": "Ladies Quality Dress",
+                "price": 2800,
+                "image": {
+                    "fields": {
+                        "file": {
+                            "url": "images/dress-02.jpg"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "sys": {
+                "id": "9"
+            },
+            "fields": {
+                "title": "Turkey Ladies Dress",
+                "price": 3500,
+                "image": {
+                    "fields": {
+                        "file": {
+                            "url": "images/dress-08.jpg"
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}
+

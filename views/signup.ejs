@@ -1,0 +1,46 @@
+  <%- include("partials/_head") %>
+  
+  <%- include("partials/_header") %>
+ <!-- Start of Main -->
+ <main class = 'container'>
+   <section  class = 'main-items main-items-sm main-items-md'>
+    <h1>Sign up<span class = 'span-reg'>to get started...</span></h1>
+    
+   </section>
+     <section  class = 'main-items main-items-sm main-items-md'>
+      <form class = 'signup-form' name = 'signupForm' action = '/signup' method = 'post'>
+        <section class = 'form-item'>
+            <label for ='firstName'>First Name
+            </label>
+            <input type ='text' id="firstName" name = "firstName" class ="firstName input-item" required>
+        </section>
+        <section class = 'form-item'>
+           <label for ='lastName'>Last Name
+           </label>
+           <input type ='text' id = "lastName" name =  "lastName" class ='lastName input-item' required>
+       </section>
+       <section class = 'form-item'>
+           <label for = 'emal'>Email</label>
+           <input type = 'email' name = 'email' id = 'email' class = 'email input-item' required>
+       </section>
+       <section class = 'form-item'>
+           <label for = 'password'>Password</label>
+           <input type = 'password' name = 'password' id = 'password' class = 'password input-item' required>
+       </section>
+       <section class = 'form-item'>
+           <label for = 'password_2'>Confirm Password</label>
+           <input type = 'password' name =  'password_2' id = 'password_2' class  = 'confirm-pass input-item' required>
+            <h5 class = 'sign-lbl'>  Already have account?
+              <a href = "/login">
+                <span class="span span-sign">Sign in</span>
+              </a>
+            </h5>
+        </section>
+       <section>
+           <button type ="submit" class = 'btn'>Create account</button>
+       </section>
+    </form>
+  </section>
+ </main>
+
+<%- include("partials/_footer") %>

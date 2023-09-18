@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    line-height: 1.5;
+    font-size: small;
+}
+body {
+    width: 100vw;
+    max-width: calc(100% - 10rem);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    color: darkblue;
+    background: lightblue;
+}
+.header {
+    padding-block: 1rem 2rem;
+    width: 100%;
+}
+.navbar,
+.nav-items {
+    display: flex;
+    justify-content: space-between;
+}
+.nav-items {
+    gap: 2rem;
+}
+.nav-items > li  {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+.main {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 80%;
+    gap: 1rem;
+    flex-direction: column;
+    padding-block: 2rem;
+    text-align: center;
+}
+.main-items {
+    padding-block-start: 2rem;
+    display: flex;
+    align-items: start;
+    gap: 4rem;
+}
+.main-avatar {
+    width: 45%;
+    border: 1px solld red;
+
+}
+.main-avatar img {
+    display: block;
+    max-height: 100%;
+    max-inline-size: 100%;
+    block-size: auto;
+    object-fit: cover;
+    aspect-ratio: 2/1;
+}
+
+.table-wrapper {
+    width: 100%; 
+    overflow-x: auto;
+}
+.table {
+    margin: auto;
+    padding-inline-start: 2rem;
+    width: 100%;
+    max-width: 100vw;
+    border-collapse: collapse;
+}
+th,
+td {
+    padding: 8px 14px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+tbody{
+    background-color: #f5f5f5;
+}
+th {
+    background-color: #4caf50;
+    color: white;
+}
+
+td:last-child {
+    min-width: 150px;
+    max-width: 150px;
+    word-break: break-all;
+}
+
+tfoot {
+    background-color: #40524a;
+    color: whitesmoke;
+}
+tfoot td {
+    text-align: center;
+}
+
+/* Footer styles starts here */
+.footer {
+    margin: auto;
+    width: 100vw;
+    max-width: calc(100% - 10rem);
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    padding-block: 1rem 2rem;
+    border-block-start: .1rem solid seagreen;
+}
+
+.footer span-date {
+    display: block;
+    padding-inline: 2rem;
+}

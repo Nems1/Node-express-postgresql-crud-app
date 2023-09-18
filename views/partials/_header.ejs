@@ -1,0 +1,60 @@
+</head>
+<body>
+  
+<!-- Start of page header section-->
+<header class = 'pg-header pg-header-sm pg-header-md'>
+    <section class = 'header-items header-items-sm header-items-md logo'>
+      <a class = 'item item-sm item-md' href = "/">
+        <h1>Nemwel <span class = 'span-logo'>Onsando</span></h1>
+      </a>
+    </section>
+      <nav class = 'header-items pg-nav'>
+        <ol class ='nav-wrapper'>
+            <article class = 'nav-items'>
+            <% if(isLoggedIn) { %>
+            <li>
+             <a class = 'item item-sm item-md' href = "/">
+               Home
+              </a>
+            </li>
+          <li>
+            <a class = 'item item-sm item-md' href = "/about">
+              About
+             </a>
+           </li>
+           <li>
+              <a class = 'item item-sm item-md' href = "/contact">
+                Contact
+               </a>
+             </li>
+             <li>
+              <a class = 'item item-sm item-md' href = "/cart">
+                My Shop
+               </a>
+             </li>
+             <li>
+              <a class = 'item item-sm item-md' href = "/logout">
+                Logout
+               </a>
+             </li>
+             <% } else { %>
+             <li>
+             <a class = 'item item-sm item-md' href = "/">
+               Home
+              </a>
+            </li>
+            <li>
+              <a class = 'item item-sm item-md' href = "/signup" target = "_top">
+                Sign up
+               </a>
+             </li>
+             <li>
+              <a class = 'item item-sm item-md' href = "/login">
+                Sign in
+               </a>
+             </li>
+              <% } %>
+           </article>    
+       </ol>
+       </nav>
+</header>

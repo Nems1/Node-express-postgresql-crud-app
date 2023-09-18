@@ -1,0 +1,30 @@
+<%- include("partials/_head") %>
+
+<%- include("partials/_header") %>
+<!-- Start of Main -->
+ <main class = 'container'>
+   <section class = 'main-items main-items-sm main-items-md'>
+    <h1>Sign in</h1>
+   </section>
+    <section >
+      <form class ='login-form' action = '/login' method = 'post'>
+        <section class = 'form-item'>
+            <label for = 'email'>Email</label>
+            <input type = 'email' name = 'email' id = 'email' class = 'email input-item' required>
+        </section>
+        <section class = 'form-item'>
+            <label for = 'password'>Password</label>
+            <input type = 'password' name = 'password' id = 'password' class = 'password input-item' required>
+            <h5 class = 'sign-up-lbl'> No account?
+              <a href = "/signup">
+                <span class="span span-sign">Sign up</span>
+              </a>
+            </h5>
+        </section>
+         <section>
+            <button type = "submit" class = 'btn btn-sign-in'>Sign in</button>
+         </section>
+     </form>
+    </section>
+ </main>
+<%- include("partials/_footer") %>
