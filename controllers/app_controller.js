@@ -50,9 +50,9 @@ const contactRoute = async (req, res, next) => {
 // Shopping Cart route
 const shoppingCartRoute = async (req, res, next) => {
     const User = req.session.user;
-    if (User) {  
+    //if (User) {  
         const items = await appModels.getProducts(req,res);
-        console.log('\n\tshoppingCartRoute->Received ->');
+       /* console.log('\n\tshoppingCartRoute->Received ->');
         console.log('items is an: ', typeof items);
         //console.log(items);
         items.map(item => { 
@@ -60,16 +60,18 @@ const shoppingCartRoute = async (req, res, next) => {
             //console.log('Inside map->item-> ', JSON.stringify(item.fields.image.fields.file.url))
             console.log('Inside map->item-> ', item);
         });
+        */
     
         res.render('cart', {
             title: 'Shopping Cart',
-            name: `${User.firstname} ${User.lastname}`,
+           // name: `${User.firstname} ${User.lastname}`,
             items: items,
-            isLoggedIn: true
+            isLogged: true
         });    
-    } else {
+  /*  } else {
         res.redirect('login');
-    }
+    } 
+    */
 };
 
 const signupRoute = async(req, res, next) =>{

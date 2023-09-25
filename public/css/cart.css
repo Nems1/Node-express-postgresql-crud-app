@@ -26,8 +26,8 @@ body {
   width: 100%;
   display: flex;
   align-items: center;
-  /* background: rgb(231, 226, 221);
-  z-index: 1; */
+  /* background: rgb(231, 226, 221); */
+  z-index: 1;
 }
 .navbar-center {
   width: 100%;
@@ -41,6 +41,9 @@ body {
 }
 .nav-icon {
   font-size: 1.5rem;
+}
+.logo {
+  width: 200px;
 }
 .cart-btn {
   position: relative;
@@ -89,9 +92,14 @@ body {
 .item-details {
   padding-inline-end: .2rem;
 }
-.item-image img {
+.item-image img,
+.logo img {
     max-inline-size: 100%;
     max-height: 100%;
     block-size: auto;
     object-fit: contain;
+}
+.logo img {
+  border-radius: 10%;
+  padding: 10px;
 }
