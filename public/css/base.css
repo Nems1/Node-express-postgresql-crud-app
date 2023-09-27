@@ -119,8 +119,10 @@ a.item::visited {
 @media screen and (max-width: 63.75rem) {
     .pg-header-sm {
         width: 100vw;
-        height: 12rem;
-        margin-block-start: 1rem;
+        /* height: 12rem; */
+        height: 6rem;
+        padding-block: .2rem;
+        margin-block: 0rem;
         padding-inline: 1rem;
         display: flex;
         color: var(--bg-color);

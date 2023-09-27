@@ -31,7 +31,7 @@ const aboutRoute = async (req, res, next) => {
         res.redirect('login');
     }
 };
-
+  
 const contactRoute = async (req, res, next) => {
     const User = req.session.user;
     if (User) {

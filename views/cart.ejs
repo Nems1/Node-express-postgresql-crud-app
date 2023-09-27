@@ -6,36 +6,96 @@
     <!-- Custom css styles-->
     <link href = "css/cart.css" rel = "stylesheet">
 	<link href = "images/favicon.png" rel = "icon">
-
     
     <%- include("partials/_cart-header") %>
+ 
+		 <!-- Hero section-->
+      <section class = "hero">
+        <header class = "banner">
+			<h1 class = "banner-title">Featured Collection</h1>
+          	<button class = "banner-btn">Shop Now</button>
+        </header>
+	  </section>
 
-    <!-- Start of Main -->
+	  <!--End of Hero section -->
+	  <!-- Start of Main -->
     <main class = "container">
-	<!-- Product gallery shell to load HTML from JavaScript code -->
-		<div id = "product-grid" class = "product-grid">
-			<div class = "txt-heading">
-				<h1>Our Products</h1>
-			</div>
-			<div id = "product-item-container" class = "product-item-container">
-				<% items.map(item => { %>
-				<div class = "items">
-						<%  const showItemImage = `${item.image.url}${item.image.file}.${item.image.ext}`; %>
-						<%#  console.log('\n\tImage->cart.ejs:\n\t', showItemImage) %>
-						<!--<img src = <%# item.image.url.file.ext %> /> -->
-						<div class = 'item-image'>
-							<img src = <%= showItemImage %> />
-						</div> 
-						<div class = 'item-details'>
-							<p><%= item.product_id %></p>
-							<p><%= item.title %></p>
-							<p><%= item.price %></p>
-						</div>
+
+	  <!-- Products -->
+	  <section class = "products">
+		<section class = "product-title">
+			<h2>Our products</h2>
+		</section>
+		<section class = "products-center">
+			<% items.map(item => { %>
+			<article class = "product">
+				<%  const showItemImage = `${item.image.url}${item.image.file}.${item.image.ext}`; %>
+				<div class="img-container">
+					<img src = <%= showItemImage %> alt = "product" class = "product-img" />
+					<button class = "bag-btn" data-id = <%= item.product_id %>>
+						<i class = "fas fa-shopping-cart"></i>
+						Add to cart
+					</button>
 				</div>
-				<% }); %>
-			</div>
-		</div>
-		
+				<h3><%= item.title %></h3>
+				<h4>Ksh. <%= item.price %></h4>
+			</article>
+			<% }); %>
+		</section>
+	  </section>
+    <!-- End of product -->
+
+	<!-- Cart-->
+	  <section class = "cart-overlay">
+		<article class = "cart">
+		     <!-- Cart Header  -->
+			<header class="header-cart">
+				<span class = "close-cart">
+				<i class = "fas fa-window-close"></i>
+				</span>
+				<!-- logo on cart 	-->
+				<span class = "nav-icon logo-cart">
+            		<a href = '/'> 
+              			<img src = "images/logo-06.png" />
+            		</a>  
+          		</span>
+			<!-- End of logo on cart -->
+			</header>
+			<!-- End of Card Header-->
+			<h2 class = "your-cart">Your <i class = "fa your-fa-cart">&#xf07a;</i>Cart</h2>
+			<section class = "cart-content">
+				<!-- Cart Item -->
+				<article class = "cart-item ">
+					<img src = "images/dress-04.jpg" alt = "Product" >
+					<article class = "">
+						<h4>Turkey Ladies Dress</h4>
+						<h5>Kshs. 3500.00</h5>
+						<span class = "remove-item cart-item-tooltip">
+							<i class = "fa fa-remove"></i>Remove 
+							<span class = "tooltiptext">Remove from cart</span>
+						</span>
+					</article>
+					<article>
+						<i class="fas fa-chevron-up"></i>
+						<p class="item-amount">1</p>
+						<i class="fas fa-chevron-down"></i>
+					</article>
+				</article>
+				<!-- End of Cart Item-->
+				<section class = "cart-footer">
+					<h3>Your Total: Kshs.
+						<span class = "cart-total">3500.00</span>
+					</h3>
+					<span class = "empty-cart-tooltip">
+						<button class = "clear-cart banner-btn">Clear Cart</button>
+						<p></p>
+						<span class = "tooltiptext">Removes all cart items</span>
+					</span>
+				</section>
+			</section>
+		</article>
+	  </section>
+	<!-- End of Cart-->
 	</main>
 
     <!-- Start of footer -->
