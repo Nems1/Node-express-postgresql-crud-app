@@ -5,6 +5,7 @@ router.get('/', appControllers.homeRoute);
 router.get('/about', appControllers.aboutRoute);
 router.get('/contact', appControllers.contactRoute);
 router.get('/cart', appControllers.shoppingCartRoute);
+router.get('/products', appControllers.productsApiEndpoint);
 router.get('/signup', appControllers.signupRoute);
 router.get('/login', appControllers.loginRoute);
 router.post('/signup', appControllers.saveNewUser);
